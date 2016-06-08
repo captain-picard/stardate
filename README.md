@@ -18,16 +18,14 @@ Or install it yourself as:
 
 ## Usage
 
-    2.0.0-p247 :001 > require 'stardate'
-     => true
+```ruby
+require 'stardate'
 
-    2.0.0-p247 :005 > t = Time.now + 400.years
-     => 2413-11-26 18:35:34 +0100 
-    2.0.0-p247 :006 > t.to_stardate
-     => 90902.89247608284
+t = Time.now + 400.years  # 2413-11-26 18:35:34 +0100 
+t.to_stardate             # 90902.89247608284
 
-    2.0.0-p247 :007 > 1513.1.to_time
-     => 2324-07-06 10:44:32 +0200
+1513.1.to_time            # 2324-07-06 10:44:32 +0200
+```
 
 ## Contributing
 
