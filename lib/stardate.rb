@@ -13,6 +13,10 @@ module Stardate
       seconds = self - t2          # seconds passed since the beginning of the day
       ((self.year - YEAR_O) + days / YEAR_DURATION + seconds / (YEAR_DURATION * 24 * 3600)) * 1000
     end
+    
+    def to_captains_log
+      "Captain's log, stardate #{to_stardate}..."
+    end
   end
 
   module SFloat
